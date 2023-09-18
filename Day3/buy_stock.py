@@ -7,6 +7,10 @@
         Returns:
             int: The maximum profit.
 """
+"""
+Time Complexity:- O(n)
+Space Complexity:- O(1)
+"""
 
 
 class Solution:

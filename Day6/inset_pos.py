@@ -8,7 +8,12 @@
 
         Returns:
             int: The index of the target element if found, or the index where it should be inserted.
-        """
+"""
+
+"""
+Time Complexity:- O(nlog(n))
+Space Complexity:- O(1)
+"""
 
 
 class Solution:

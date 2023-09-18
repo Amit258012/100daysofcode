@@ -8,6 +8,11 @@
             None: The function modifies 'nums' in-place and does not return anything.
 """
 
+"""
+Time Complexity:- O(n)
+Space Complexity:- O(1)
+"""
+
 
 from typing import List  # Import the List data type from the typing module.
 

@@ -9,6 +9,11 @@
     List[int]: A list containing the indices of the two numbers that add up to the target.
 """
 
+"""
+Time Complexity:- O(n)
+Space Complexity:- O(n)
+"""
+
 
 def twoSum(self, nums, target):
     # Create a dictionary to store the mapping of values to their indices.

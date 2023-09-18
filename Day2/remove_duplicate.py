@@ -6,7 +6,11 @@
 
         Returns:
             int: The length of the resulting unique list after removing duplicates.
-        """
+"""
+"""
+Time Complexity:- O(n)
+Space Complexity:- O(1)
+"""
 
 
 class Solution:

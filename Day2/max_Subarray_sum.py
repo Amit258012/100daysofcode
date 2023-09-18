@@ -12,6 +12,11 @@ Explanation: The subarray [4,-1,2,1] has the largest sum 6.
 
 """
 
+"""
+Time Complexity:- O(n)
+Space Complexity:- O(1)
+"""
+
 
 class Solution:
     def maxSubArray(self, nums):

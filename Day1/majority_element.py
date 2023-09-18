@@ -8,6 +8,11 @@
             int: The majority element if it exists, otherwise -1.
 """
 
+"""
+Time Complexity:- O(n)
+Space Complexity:- O(n)
+"""
+
 
 class Solution:
     def majorityElement(self, nums):

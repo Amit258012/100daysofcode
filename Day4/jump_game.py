@@ -4,6 +4,11 @@ You are given an integer array nums. You are initially positioned at the array's
 Return true if you can reach the last index, or false otherwise.
 """
 
+"""
+Time Complexity:- O(n)
+Space Complexity:- O(1)
+"""
+
 from typing import List
 
 

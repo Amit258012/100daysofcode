@@ -7,7 +7,10 @@
         Returns:
             int: The length of the resulting list after removing duplicates.
 """
-
+'''
+Time Complexity:- O(n)
+Space Complexity:- O(1)
+'''
 
 class Solution:
     def removeDuplicates(self, nums):

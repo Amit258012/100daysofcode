@@ -11,6 +11,11 @@
             None: The function modifies 'nums1' in-place.
 """
 
+'''
+Time Complexity:- O(n)
+Space Complexity:- O(1)
+'''
+
 
 class Solution:
     def merge(self, nums1, m, nums2, n):

@@ -7,6 +7,10 @@
         Returns:
             None: The function modifies the 'matrix' in-place and does not return anything.
 """
+"""
+Time Complexity:- O(n^2)
+Space Complexity:- O(1)
+"""
 
 
 class Solution:
