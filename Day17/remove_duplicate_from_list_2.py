@@ -5,13 +5,14 @@ Given the head of a sorted linked list, delete all nodes that have duplicate num
 Time complexity:- O(n)
 Space Complexity:- O(1)
 """
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+from typing import Optional
 
-from typing import ListNode, Optional
+
+# Definition for singly-linked list.
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
 
 class Solution:

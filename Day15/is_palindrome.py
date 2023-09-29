@@ -5,13 +5,14 @@ Given the head of a singly linked list, return true if it is a palindromeor fals
 Time complexity:- O(n/2 + n/2 + n/2) = O(n)
 Space Complexity:- O(1)
 """
-from typing import ListNode, Optional
+from typing import Optional
+
 
 # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
 
 class Solution:
