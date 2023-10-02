@@ -15,7 +15,7 @@ Input: n = 1
 Output: ["()"]
 """
 """
-Time complexity:- O(2^n)
+Time complexity:- O(~2^n)
 Space Complexity:- O(n)
 """
 from typing import List
