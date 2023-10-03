@@ -4,7 +4,6 @@
 Time complexity:- O(1)
 Space Complexity:- O(n)
 """
-from typing import List
 
 
 class MyQueue:
