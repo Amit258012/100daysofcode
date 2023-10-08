@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/sort-characters-by-frequency/
 
 """
-Time complexity:- O()
+Time complexity:- O(n)
 Space Complexity:- O(n)
 """
 from collections import Counter
