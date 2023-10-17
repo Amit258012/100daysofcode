@@ -26,9 +26,8 @@ class Solution:
 
         def preorder(root):
             if root:
-                res.append(
-                    root.val
-                )  # Visit the current node and add its value to the result.
+                # Visit the current node and add its value to the result.
+                res.append(root.val)
                 preorder(root.left)  # Recursively traverse the left subtree.
                 preorder(root.right)  # Recursively traverse the right subtree.
 
