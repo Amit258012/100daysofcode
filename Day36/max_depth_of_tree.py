@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/binary-tree-level-order-traversal/
+# https://leetcode.com/problems/maximum-depth-of-binary-tree/
 
 """
 Time complexity:- O(n)
