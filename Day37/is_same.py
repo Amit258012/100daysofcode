@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/balanced-binary-tree/
+# https://leetcode.com/problems/same-tree/
 
 """
 Time complexity:- O(n)
