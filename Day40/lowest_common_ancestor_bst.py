@@ -14,9 +14,6 @@ class TreeNode:
         self.right = right
 
 
-from typing import List, Optional
-
-
 class Solution:
     def lowestCommonAncestor(self, root, p, q):
         while True:
