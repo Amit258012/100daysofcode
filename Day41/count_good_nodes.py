@@ -14,9 +14,6 @@ class TreeNode:
         self.right = right
 
 
-from typing import Optional
-
-
 class Solution:
     def goodNodes(self, root: TreeNode) -> int:
         def dfs(node, maxVal):
