@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/count-good-nodes-in-binary-tree/
+# https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 
 """
 Time complexity:- O(H+k)
