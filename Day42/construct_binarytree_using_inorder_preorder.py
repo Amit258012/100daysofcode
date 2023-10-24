@@ -2,7 +2,7 @@
 
 """
 Time complexity:- O(N)
-Space Complexity:- O(H) Auxilary space
+Space Complexity:- O(N) Auxilary space (Function CallStack)
 """
 
 
