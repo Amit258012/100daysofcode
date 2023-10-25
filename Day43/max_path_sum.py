@@ -24,6 +24,7 @@ class Solution:
 
         # Define a helper function named 'dfs' to perform depth-first traversal and compute the maximum path sum.
         def dfs(root):
+            nonlocal res
             if not root:
                 return 0
 
