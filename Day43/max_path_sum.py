@@ -20,7 +20,7 @@ from typing import Optional
 class Solution:
     def maxPathSum(self, root: Optional[TreeNode]) -> int:
         # Create a list 'res' to store the result (maximum path sum).
-        res = [root.val]
+        res = root.val
 
         # Define a helper function named 'dfs' to perform depth-first traversal and compute the maximum path sum.
         def dfs(root):
@@ -35,8 +35,8 @@ class Solution:
             leftMax = max(leftMax, 0)
             rightMax = max(rightMax, 0)
 
-            # Update 'res[0]' with the maximum path sum considering the current node.
-            res[0] = max(res[0], root.val + leftMax + rightMax)
+            # Update 'res' with the maximum path sum considering the current node.
+            res = max(res, root.val + leftMax + rightMax)
 
             # Return the maximum path sum considering the current node and one of its subtrees.
             return root.val + max(leftMax, rightMax)
@@ -44,5 +44,5 @@ class Solution:
         # Start the depth-first traversal from the root.
         dfs(root)
 
-        # Return the maximum path sum stored in 'res[0]'.
-        return res[0]
+        # Return the maximum path sum stored in 'res'.
+        return res
