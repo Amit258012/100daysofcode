@@ -20,6 +20,9 @@ from typing import List, Optional
 class Solution:
     def connect(self, root):
         # Define a helper function 'dfs' for depth-first search.
+
+        ## (1). left child -> right child
+        ## (2). right child -> next.left child
         def dfs(root):
             # If the current node is None or it doesn't have a left child, return.
             if root == None or root.left == None:
