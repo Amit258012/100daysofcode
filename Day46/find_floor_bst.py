@@ -20,15 +20,15 @@ class Solution:
         if not root:
             return floor
 
-        # If the current node's data matches the input 'x', return the data.
-        if root.data == x:
-            return root.data
+        # If the current node's val matches the input 'x', return the val.
+        if root.val == x:
+            return root.val
 
-        # If the current node's data is less than 'x', update 'floor' and
+        # If the current node's val is less than 'x', update 'floor' and
         # recursively search in the right subtree.
-        if root.data < x:
-            floor = root.data
+        if root.val < x:
+            floor = root.val
             return self.floor(root.right, x, floor)
-        # If the current node's data is greater than 'x', search in the left subtree.
+        # If the current node's val is greater than 'x', search in the left subtree.
         else:
             return self.floor(root.left, x, floor)
