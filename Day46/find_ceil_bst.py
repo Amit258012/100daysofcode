@@ -1,4 +1,4 @@
-# https://practice.geeksforgeeks.org/problems/floor-in-bst/1
+# https://practice.geeksforgeeks.org/problems/implementing-ceil-in-bst/1
 
 """
 Time complexity:- O(H)
