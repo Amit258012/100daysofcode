@@ -15,20 +15,20 @@ class TreeNode:
 
 
 class Solution:
-    def findCeil(self, root, x, ceil=-1):
-        # If the root is None, return the current 'ceil' value.
+    def floor(self, root, x, floor=-1):
+        # If the current node is None, return the current 'floor' value.
         if not root:
-            return ceil
+            return floor
 
-        # If the current node's val matches the input value, return the val.
-        if root.val == x:
-            return root.val
+        # If the current node's data matches the input 'x', return the data.
+        if root.data == x:
+            return root.data
 
-        # If the current node's val is greater than the input value, update 'ceil' and
-        # recursively search in the left subtree.
-        if root.val > x:
-            ceil = root.val
-            return self.findCeil(root.left, x, ceil)
-        # If the current node's val is less than the input value, search in the right subtree.
+        # If the current node's data is less than 'x', update 'floor' and
+        # recursively search in the right subtree.
+        if root.data < x:
+            floor = root.data
+            return self.floor(root.right, x, floor)
+        # If the current node's data is greater than 'x', search in the left subtree.
         else:
-            return self.findCeil(root.right, x, ceil)
+            return self.floor(root.left, x, floor)
