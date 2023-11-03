@@ -11,9 +11,8 @@ class Solution:
         mask = 0xFFFFFFFF  # Initialize a mask to 32 bits (0xffffffff in hexadecimal).
 
         while (b & mask) > 0:
-            carry = (
-                a & b
-            ) << 1  # Calculate the carry bit using bitwise AND and left shift.
+            # Calculate the carry bit using bitwise AND and left shift.
+            carry = (a & b) << 1
             a = a ^ b  # Calculate the sum of 'a' and 'b' using bitwise XOR.
             b = carry  # Update 'b' with the carry bit.
 
