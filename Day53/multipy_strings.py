@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/multiply-strings/
 
 """
-Time complexity:- O(N^2)
+Time complexity:- O(N*M)
 Space Complexity:- O(N+M) 
 """
 
