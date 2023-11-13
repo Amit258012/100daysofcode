@@ -22,15 +22,15 @@ class Solution:
     def minimizeArrayValue(self, nums: List[int]) -> int:
         # Initialize answer and the prefix sum.
         answer = 0
-        prefix_sum = 0
+        prefixSum = 0
 
         # Iterate over nums, update prefix sum and answer.
         for i in range(len(nums)):
-            prefix_sum += nums[i]
+            prefixSum += nums[i]
             # Calculate the average value and round up using math.ceil.
-            average_value = math.ceil(prefix_sum / (i + 1))
+            avg = math.ceil(prefixSum / (i + 1))
             # Update the answer with the maximum of current answer and average value.
-            answer = max(answer, average_value)
+            answer = max(answer, avg)
 
         # Return the minimum possible value of the array.
         return answer
