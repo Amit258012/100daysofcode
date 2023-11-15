@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/two-city-scheduling/
+# https://leetcode.com/problems/maximum-length-of-pair-chain/
 
 """
 Time complexity:- O(N logN)
