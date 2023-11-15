@@ -8,9 +8,7 @@ Space Complexity:- O(1)
 """
 Intuition:
 
-The code sorts the pairs based on the second element (tail) in ascending order.
-It iterates through the sorted pairs, selecting pairs such that the head is greater than the current tail.
-The length of the longest chain is updated accordingly.
+The code aims to find the maximum possible element in an array after decrementing and rearranging it. It does this by sorting the array and iteratively updating the maximum element based on certain conditions. The goal is to achieve a continuous sequence of integers starting from 1 after rearrangement. 
 """
 
 
