@@ -1,46 +1,46 @@
 # https://leetcode.com/problems/frequency-of-the-most-frequent-element/
 """
-Time complexity:- O(N logN)
+Time complexity:- O(N)
 Space Complexity:- O(1) 
 """
 
 """
 Intuition:
 
-The algorithm implements the fractional knapsack problem, where items can be included fractionally.
-It sorts the items based on their value-to-weight ratio in descending order to maximize the total value.
+The algorithm aims to find the maximum frequency of any element in the array, given the ability to modify at most k elements.
+The sliding window approach efficiently computes the sum of elements in the current window while ensuring the condition is met.
 """
 
 
-class Item:
-    def __init__(self, val, w):
-        # Constructor to create an Item with a given value and weight.
-        self.value = val
-        self.weight = w
+from typing import List
 
 
 class Solution:
-    # Function to get the maximum total value in the knapsack.
-    def fractionalknapsack(self, W, arr, n):
-        # Sort the items based on their value-to-weight ratio in descending order.
-        arr.sort(key=lambda x: x.value / x.weight, reverse=True)
+    def maxFrequency(self, nums: List[int], k: int) -> int:
+        # Sort the array for efficient sliding window computation
+        nums.sort()
+        # Initialize pointers for the sliding window (left and right)
+        left = 0
+        # Initialize the result variable to store the maximum frequency
+        res = 0
+        # Initialize the sum of the current window
+        cur = 0
 
-        # Initialize variables to keep track of current weight and final value.
-        curWeight = 0
-        finalVal = 0.0
+        # Iterate over the array using the right pointer
+        for right in range(len(nums)):
+            # Get the target element in the current window
+            target = nums[right]
+            # Add the target element to the current sum
+            cur += target
 
-        # Iterate through the sorted items.
-        for i in range(n):
-            # Check if adding the entire item won't exceed the weight limit.
-            if curWeight + arr[i].weight <= W:
-                # Include the entire item in the knapsack.
-                curWeight += arr[i].weight
-                finalVal += arr[i].value
-            else:
-                # Calculate the remaining weight that can be included fractionally.
-                rem = W - curWeight
-                # Include a fraction of the current item to fill the remaining weight.
-                finalVal += (arr[i].value / arr[i].weight) * rem
-                break
+            # Check if the current window violates the condition (sum of differences > k)
+            while (right - left + 1) * target - cur > k:
+                # Remove the leftmost element from the window
+                cur -= nums[left]
+                left += 1
 
-        return finalVal
+            # Update the result with the maximum frequency encountered so far
+            res = max(res, right - left + 1)
+
+        # The final result represents the maximum frequency achievable with at most k modifications
+        return res
