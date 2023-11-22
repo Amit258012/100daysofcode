@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/maximum-product-subarray/
+# https://leetcode.com/problems/word-break/
 """
 Time complexity:- O(N*M) 
 Space Complexity:- O(N) 
