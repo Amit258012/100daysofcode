@@ -13,8 +13,6 @@ The dp array is filled in a bottom-up manner, starting from the end of both stri
 The final result is the top-left cell of the dp array, representing the length of the LCS.
 """
 
-from typing import List
-
 
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
