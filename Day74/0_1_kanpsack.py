@@ -13,7 +13,6 @@ The final result is stored in 'prev[W]', representing the maximum value of items
 """
 
 import sys
-from typing import List
 
 
 def maxProfit(val, wt, n, W):
