@@ -12,8 +12,6 @@ Dynamic programming is employed to find the minimum edit distance by considering
 The dp array is filled in a bottom-up manner, starting from the base cases and iteratively calculating the minimum number of operations required to transform substrings of the words.
 """
 
-from typing import List
-
 
 class Solution:
     def minDistance(self, word1: str, word2: str) -> int:
