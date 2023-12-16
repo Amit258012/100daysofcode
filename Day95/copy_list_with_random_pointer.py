@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/copy-list-with-random-pointer/
 """
 Time complexity:- O(N)
-Space Complexity:- O(1)
+Space Complexity:- O(N)
 """
 
 """
