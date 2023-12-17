@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/redundant-connection/
 """
-Time complexity:- O(N)
+Time complexity:- O(N^2)
 Space Complexity:- O(N)
 """
 
