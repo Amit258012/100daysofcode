@@ -7,11 +7,10 @@ Space Complexity:- O(1)
 """
 Intuition:
 
-The findMaxForm method uses dynamic programming to solve the 0/1 knapsack problem.
-The DP array dp[i][j] represents the maximum number of strings that can be formed with i '0's and j '1's.
-The counter list stores the count of '0's and '1's for each string in the input list strs.
-The nested loops iterate through each string and update the DP array based on the counts of '0's and '1's, maximizing the count.
-The result is obtained from the bottom-right cell of the DP array.
+The solveSudoku method uses a backtracking approach to solve the Sudoku puzzle in-place.
+The isValid function checks if a digit can be placed at a given position without violating the Sudoku rules.
+The solve function recursively tries to fill in the Sudoku grid by considering each empty cell and trying digits from 1 to 9.
+If a placement leads to a valid solution, the process continues; otherwise, it backtracks to the previous state and tries a different digit.
 """
 
 
